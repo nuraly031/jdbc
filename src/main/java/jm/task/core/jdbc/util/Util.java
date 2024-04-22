@@ -1,16 +1,10 @@
 package jm.task.core.jdbc.util;
 
-import jm.task.core.jdbc.dao.UserDaoJDBCImpl;
 import jm.task.core.jdbc.model.User;
-import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.cfg.Environment;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -20,7 +14,7 @@ import java.util.Properties;
 public class Util {
     private static final String URL = "jdbc:postgresql://localhost:5432/postgres";
     private static final String USERNAME = "postgres";
-    private static final String PASSWORD = "Aa2131*!";
+    private static final String PASSWORD = "";
     private static Connection connection;
 
     static {
